@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">HyperXpress</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="pessoal">Pessoal</string>
+    <string name="nome">Nome</string>
+    <string name="avatar">Avatar</string>
+    <string name="cpf">CPF</string>
+    <string name="confirmar_senha">Confirmar</string>
+    <string name="cep">Cep</string>
+    <string name="cidade">Cidade</string>
+    <string name="bairro">Bairro</string>
+    <string name="numero">Número</string>
+    <string name="title_activity_editar_info_usuario">Editar informações</string>
+    <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
+    <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabeçalho de navegação</string>
+    <string name="action_settings">Configurações</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_slideshow">Apresentação de slide</string>
+    <string name="perfil">Perfil</string>
+    <string name="title_activity_aplicacao_apos_logar">Aplicacao após logar</string>
+    <string name="editar_cadastro">Editar Cadastro</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="nome_do_produto">Nome do produto</string>
+    <string name="camiseta_thasher">Camiseta Thasher</string>
+    <string name="marca_produto">Marca</string>
+    <string name="marca_thasher">Thasher</string>
+    <string name="tamanho_produto">Tamanho</string>
+    <string name="medida_roupa">G</string>
+    <string name="categoria_produto">Categoria</string>
+    <string name="genero_produto">Genero</string>
+    <string name="preco_produto">Preço</string>
+    <string name="hint_preco_produto">R$: 79.99</string>
+    <string name="modelo_produto">Modelo</string>
+    <string name="hint_modelo_produto">Basico</string>
+    <string name="quase_la">Quase lá</string>
+    <string name="msg_confimar_codigo">Para finalizar seu cadastro, basta inserir o código de verificação que foi enviado para seu celular.</string>
+    <string name="codigo_cadastro">Código</string>
+    <string name="hint_input_codigo">Insira seu código</string>
+    <string name="reenviar_codigo_confirmacao">Reenviar Código</string>
+    <string name="endereco">Endereço</string>
+    <string name="hint_cep">08410400</string>
+    <string name="estado">Estado</string>
+    <string name="hint_estado">UF</string>
+    <string name="hint_cidade">São Paulo</string>
+    <string name="hint_endereco">Av Paulista</string>
+    <string name="hint_bairro">Maua</string>
+    <string name="hint_numero">Ex: 412</string>
+    <string name="voltar">Voltar</string>
+    <string name="proximo">Próximo</string>
+    <string name="sucesso">Sucesso</string>
+    <string name="msg_cadastro_concluido">Parabéns, agora você é um membro da HyperXpress.</string>
+    <string name="hint_nome">Seu nome completo</string>
+    <string name="hint_avatar">Seu nome de avatar</string>
+    <string name="hint_cpf">456.123.567/32</string>
+    <string name="hint_email">exemple@exemple.com</string>
+    <string name="data_nascimento">Nascimento</string>
+    <string name="hint_data_nascimento">DD/MM/AAAA</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_confirm_senha">Confirmar</string>
+    <string name="sub_titulo">Sua Roupa da melhor forma</string>
+    <string name="texto_splash">HX</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_primeiro_produto">Patenete Preto</string>
+    <string name="preco_primeiro_produto">R$: 89,99</string>
+    <string name="nome_segundo_produto">Impressora</string>
+    <string name="preco_segundo_produto">R$: 199,99</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="nao_tenho_cadastro">Não tenho Cadastro</string>
+    <string name="tecido">Tecido</string>
+    <string name="hint_tecido">Algodão</string>
+    <string name="descricao">Descrição</string>
+    <string name="trocavel">Trocável</string>
+    <string name="anunciar_produto">Anunciar Produto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="anunciar">Anunciar</string>
+    <string name="suporte">Suporte</string>
+    <string name="sobre">Sobre</string>
+    <string name="sair">Sair</string>
+    <string name="erro_inesperado">Um erro inesperado ocorreu. Tente novamente mais tarde.</string>
+    <string name="sem_internet">Ocorreu um Erro, Verifique sua Internet</string>
+    <string name="login_falhou">Usuário ou Senha Inválidos</string>
+    <string name="endereco_nao_encontrado">Endereco Não Encontrado</string>
+    <string name="caracteres_permitodos_nome">ABCDEFGH IJKLMNOPQRSTUVWXYZ</string>
+    <string name="caracteres_permitidos_avatar">aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ_.1234567890</string>
+    <string name="cache_nome">nome</string>
+    <string name="cache_cpf">cpf</string>
+    <string name="cache_data_nasc">dataNasc</string>
+    <string name="chache_estado">estadoUf</string>
+    <string name="cache_cep">cep</string>
+    <string name="cache_bairro">bairro</string>
+    <string name="cache_logradouro">logradouro</string>
+    <string name="cache_numero">numero</string>
+    <string name="cache_cidade">cidade</string>
+    <string name="cache_complemento">complemento</string>
+    <string name="cache_avatar">avatar</string>
+    <string name="cache_profile">profileurl</string>
+    <string name="cache_email">email</string>
+    <string name="cache_senha">senha</string>
+    <string name="cache_id">id</string>
+    <string name="cache_username">username</string>
+    <string name="usuario">Usuario</string>
+    <string name="celular">Celular</string>
+    <string name="produto">Produto</string>
+    <string name="hint_telefone">(11)90283-9015</string>
+    <string name="caracteristicas_produto">Caracteristicas Principais</string>
+    <string name="blusas">blusas</string>
+    <string name="camisas">Camisas</string>
+    <string name="bermudas">Bermudas</string>
+    <string name="calcas">Calças</string>
+    <string name="calcados">Calçados</string>
+    <string name="parcelas_produto">4 x de R$: 22,50 sem juros</string>
+    <string name="descricao_produto">Camiseta Thrasher pouco usada, orginal não me serviu direito por isso estou vendendo</string>
+    <string name="comprar">Comprar</string>
+    <string name="produtos">Produtos</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="finalizados">Finalizados</string>
+    <string name="sinal_mais">+</string>
+    <string name="historico_vendedor">Histórico Vendedor</string>
+    <string name="produto_favoritado">O Produto foi favoritado com sucesso.</string>
+    <string name="produto_adicionado_carrinho">O Produto foi Adicionado ao Carrinho com sucesso.</string>
+    <string name="item_removido">O item foi removido do Carrinho com sucesso.</string>
+    <string name="minimo_caracteres_adicionar_produto">Campo Precisa ter no minímo 3 Caracteres</string>
+    <string name="minimo_caracteres_adicionar_produto_com_foto">Campo Precisa ter no minímo 45 Caracteres</string>
+    <string name="editar_cadastro_sucesso">Usuário editado com sucesso.</string>
+    <string name="chat">Chat Xpress</string>
+    <string name="contatos">Contatos</string>
+    <string name="titulo_notificacao">Código Verificação</string>
+    <string name="descricao_notificacao">HyperXpress Código</string>
+    <string name="codigo_incorreto">Código Incorreto</string>
+    <string name="digite_codigo">Digite o Código</string>
+    <string name="redefinir_senha">Uma solicitação de redefinição de senha foi enviada ao seu e-mail</string>
+    <string name="cep_nao_encontrado">cep não encontrado</string>
+    <string name="nome_invalido">Nome deve conter pelo menos 3 caracteres</string>
+    <string name="avatar_invalido">Avatar tem que ter no minímo 5 caracteres</string>
+    <string name="cpf_invalido">CPF Precisar ter 11 digitos</string>
+    <string name="email_invalido">Email Invalido</string>
+    <string name="data_nasc_invalido">Data Invalida</string>
+    <string name="senha_invalido">Senha deve possuir no minimo 8 caracteres</string>
+    <string name="data_confirmacao_senha_invalido">Senha e confirmação de senha devem ser iguais</string>
+    <string name="estado_invalido">Estado Invalido</string>
+    <string name="cidade_invalido">Cidade Invalida</string>
+    <string name="bairro_invalido">Bairro Invalido</string>
+    <string name="numero_invalido">Número Invalido</string>
+    <string name="cache_estado_uf">estadoUf</string>
+    <string name="cache_endereco">endereco</string>
+    <string name="imagens_invalida">Produto tem que ter 4 Fotos</string>
+    <string name="preco_default_carrinho">0.0</string>
+    <string name="enviar">Enviar</string>
+    <string name="telefone">telefone</string>
+    <string name="telefone_invalido">Telefone Invalido</string>
+    <string name="erro_foto">Foto nescessária</string>
+    <string-array name="lista_categoria">
+        <item>Blusa Moletom</item>
+        <item>Corta Vento</item>
+        <item>Terno</item>
+        <item>Sobre Tudo</item>
+        <item>Blusinha</item>
+        <item>Camisa Regata</item>
+        <item>Camisa Manga Longa</item>
+        <item>Camisa Social</item>
+        <item>Short Jeans</item>
+        <item>Short Futebol</item>
+        <item>Short Praia</item>
+        <item>Short Feminino</item>
+        <item>Calça Jeans</item>
+        <item>Calça Moletom</item>
+        <item>Calça Social</item>
+        <item>Calça Legging</item>
+        <item>Sapato</item>
+        <item>Tenis</item>
+        <item>Sandalia</item>
+        <item>Bota</item>
+    </string-array>
+
+    <string-array name="lista_genero">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Infantil</item>
+        <item>Esporte</item>
+    </string-array>
+
+    <string-array name="lista_trocavel">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+    <string-array name="lista_tamanho_produto">
+        <item>PP</item>
+        <item>P</item>
+        <item>G</item>
+        <item>GG</item>
+        <item>EG</item>
+        <item>EGG</item>
+    </string-array>
+</resources>

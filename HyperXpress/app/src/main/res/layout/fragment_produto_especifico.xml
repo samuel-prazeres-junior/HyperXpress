@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.ProdutoEspecificoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_imagem_produto_especifico"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/icone_patinete"/>
+
+
+            <ImageView
+                android:id="@+id/iv_produto_trocavel_produto_especifico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/iv_imagem_produto_especifico"
+                app:layout_constraintTop_toTopOf="@+id/iv_imagem_produto_especifico"
+                android:visibility="gone"
+                android:src="@drawable/icone_trocavel"/>
+
+            <ImageView
+                android:id="@+id/iv_imagem_produto_especifico1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_imagem_produto_especifico"
+                android:src="@drawable/icone_patinete"/>
+
+            <ImageView
+                android:id="@+id/iv_imagem_produto_especifico2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/iv_imagem_produto_especifico1"
+                app:layout_constraintTop_toTopOf="@id/iv_imagem_produto_especifico1"
+                android:src="@drawable/icone_patinete"/>
+
+            <ImageView
+                android:id="@+id/iv_imagem_produto_especifico3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/iv_imagem_produto_especifico2"
+                app:layout_constraintTop_toTopOf="@id/iv_imagem_produto_especifico2"
+                android:src="@drawable/icone_patinete"/>
+
+            <ImageView
+                android:id="@+id/iv_imagem_produto_especifico4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/iv_imagem_produto_especifico3"
+                app:layout_constraintTop_toTopOf="@id/iv_imagem_produto_especifico3"
+                android:src="@drawable/icone_patinete"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="50dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_nome_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/camiseta_thasher"
+                android:layout_margin="20dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/colorTextStandard"
+                app:layout_constraintTop_toBottomOf="@+id/iv_imagem_produto_especifico1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_preco_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/colorTextStandard"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nome_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_caracteristicas_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/caracteristicas_produto"
+                android:textColor="@color/colorTextStandard"
+                app:layout_constraintTop_toBottomOf="@+id/tv_preco_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_marca_produto_especifico"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="20dp"
+                android:text="@string/marca_produto"
+                android:fontFamily="@font/poppins"
+                android:background="@color/fundo_escuro"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_caracteristicas_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvt_tamanho_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/tamanho_produto"
+                android:fontFamily="@font/poppins"
+                android:layout_marginEnd="20dp"
+                android:background="@color/fundo_escuro"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                app:layout_constraintStart_toEndOf="@+id/tv_marca_produto_especifico"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_marca_produto_especifico"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tv_valor_marca_produto_especifico"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/poppins"
+                android:layout_margin="20dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorTextStandard"
+                app:layout_constraintTop_toBottomOf="@+id/tv_marca_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_valor_tamanho_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorTextStandard"
+                app:layout_constraintStart_toEndOf="@+id/tv_valor_marca_produto_especifico"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvt_tamanho_produto_especifico"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_descricao_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/descricao"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintTop_toBottomOf="@+id/tv_valor_marca_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_horizontal"
+                android:background="@color/fundo_escuro"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_valor_descricao_produto_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/colorTextStandard"
+                android:text="@string/descricao_produto"
+                app:layout_constraintTop_toBottomOf="@+id/tv_descricao_produto_especifico"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_fundo_favorito_pruduto_especifico"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_arredondada"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_carrinho_produto_especifico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_carrinho_produto_especifico"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_favorito_pruduto_especifico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icone_favorito"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintStart_toStartOf="@id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintTop_toTopOf="@+id/iv_fundo_favorito_pruduto_especifico" />
+
+
+    <ImageView
+        android:id="@+id/iv_fundo_chat_pruduto_especifico"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_arredondada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintTop_toTopOf="@+id/iv_fundo_favorito_pruduto_especifico"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iv_carrinho_produto_especifico"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/icone_carrinho"
+        app:layout_constraintTop_toTopOf="@+id/iv_fundo_chat_pruduto_especifico"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fundo_chat_pruduto_especifico"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fundo_chat_pruduto_especifico"
+        app:layout_constraintStart_toStartOf="@+id/iv_fundo_chat_pruduto_especifico" />
+
+    <Button
+        android:id="@+id/btn_comprar_produto_especifico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/button_roxo_sem_layout"
+        android:paddingBottom="10dp"
+        android:text="@string/comprar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_fundo_chat_pruduto_especifico"
+        app:layout_constraintTop_toTopOf="@id/iv_fundo_chat_pruduto_especifico"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

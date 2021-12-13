@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_fundo_tela_favorito"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:background="@drawable/borda_levemente_arredondada"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nome_vendedor_favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorTextStandard"
+        android:text="@string/camiseta_thasher"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@+id/iv_fundo_tela_favorito"
+        app:layout_constraintStart_toStartOf="@id/iv_fundo_tela_favorito"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+    <View
+        android:id="@+id/view_favoritos_nome_vendedor"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome_vendedor_favorito"
+        app:layout_constraintStart_toStartOf="@+id/iv_fundo_tela_favorito"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fundo_tela_favorito"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_image_produto_favoritos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icone_patinete"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/iv_fundo_tela_favorito"
+        app:layout_constraintTop_toTopOf="@id/view_favoritos_nome_vendedor"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+    <ImageView
+        android:id="@+id/iv_image_produto_trocavel_favoritado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icone_trocavel"
+        android:backgroundTint="@color/roxo"
+        app:layout_constraintStart_toEndOf="@id/iv_image_produto_favoritos"
+        app:layout_constraintTop_toTopOf="@id/iv_image_produto_favoritos"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+    <ImageView
+        android:id="@+id/iv_image_produto_favoritado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icone_produto_favoritado"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/roxo"
+        app:layout_constraintStart_toEndOf="@id/iv_image_produto_favoritos"
+        app:layout_constraintBottom_toBottomOf="@id/iv_image_produto_favoritos"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+    <View
+        android:id="@+id/view_favoritos"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_image_produto_favoritos"
+        app:layout_constraintStart_toStartOf="@+id/iv_fundo_tela_favorito"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fundo_tela_favorito"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_nome_produto_favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorTextStandard"
+        android:text="@string/camiseta_thasher"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_favoritos"
+        app:layout_constraintStart_toStartOf="@id/iv_fundo_tela_favorito"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+    <TextView
+        android:id="@+id/tv_preco_produto_favorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorTextStandard"
+        android:text="@string/preco_primeiro_produto"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome_produto_favorito"
+        app:layout_constraintStart_toStartOf="@id/iv_fundo_tela_favorito"
+        app:layout_constraintEnd_toEndOf="@id/iv_fundo_tela_favorito"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

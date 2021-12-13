@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.HistoricoVendedorFragment">
+
+    <TextView
+        android:id="@+id/tv_historico_qtd_produtos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="0"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circulo_branco"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_produtos_historico_vendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/produtos"
+        android:textColor="@color/colorTextStandard"
+        app:layout_constraintStart_toStartOf="@+id/tv_historico_qtd_produtos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_historico_qtd_produtos"
+        app:layout_constraintEnd_toEndOf="@+id/tv_historico_qtd_produtos"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_historico_qtd_pedidos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circulo_branco"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_historico_qtd_pedidos_finalizados"
+        app:layout_constraintStart_toEndOf="@+id/tv_historico_qtd_produtos"
+        app:layout_constraintTop_toTopOf="@+id/tv_historico_qtd_produtos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pedidos"
+        android:textColor="@color/colorTextStandard"
+        app:layout_constraintStart_toStartOf="@+id/tv_historico_qtd_pedidos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_historico_qtd_pedidos"
+        app:layout_constraintEnd_toEndOf="@+id/tv_historico_qtd_pedidos"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_historico_qtd_pedidos_finalizados"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circulo_branco"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_historico_qtd_pedidos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finalizados"
+        android:textColor="@color/colorTextStandard"
+        app:layout_constraintStart_toStartOf="@+id/tv_historico_qtd_pedidos_finalizados"
+        app:layout_constraintTop_toBottomOf="@+id/tv_historico_qtd_pedidos_finalizados"
+        app:layout_constraintEnd_toEndOf="@+id/tv_historico_qtd_pedidos_finalizados"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/view_historico_vendedor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/anuncio_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_produtos_historico_vendedor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_historico_vendedor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_historico_vendedor"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_historico_vendedor_adicionar_produto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circulo_roxo"
+        android:text="@string/sinal_mais"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

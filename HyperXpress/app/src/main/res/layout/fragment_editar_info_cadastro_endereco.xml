@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".view.fragment.EditarInfoCadastroEnderecoFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/icone_user"
+           android:layout_width="140dp"
+           android:layout_height="140dp"
+           android:layout_marginTop="20dp"
+           android:src="@drawable/icone_usuario"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginTop="90dp"
+           android:src="@drawable/icone_editar"
+           app:layout_constraintStart_toEndOf="@+id/icone_user"
+           app:layout_constraintTop_toTopOf="@+id/icone_user" />
+
+       <TextView
+           android:id="@+id/salvar"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="40dp"
+           android:fontFamily="@font/poppins"
+           android:onClick="salvarAlteracoesEdicaoEndereco"
+           android:text="@string/salvar"
+           android:textColor="@color/roxo"
+           android:textSize="16dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/icone_user" />
+
+       <ImageView
+           android:id="@+id/qrCode"
+           android:layout_width="85dp"
+           android:layout_height="85dp"
+           android:layout_marginEnd="20dp"
+           android:src="@drawable/icone_qrcode"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/salvar" />
+
+       <TextView
+           android:id="@+id/editar_cep"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:fontFamily="@font/poppins"
+           android:text="@string/cep"
+           android:textColor="@color/colorTextStandard"
+           android:textSize="14sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/icone_user" />
+
+       <EditText
+           android:id="@+id/input_editar_cep"
+           android:layout_width="160dp"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_cep"
+           android:inputType="text"
+           android:maxLength="9"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editar_cep" />
+
+       <TextView
+           android:id="@+id/editEstado"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/colorTextStandard"
+           android:text="@string/estado"
+           android:textSize="14sp"
+           app:layout_constraintStart_toStartOf="@+id/input_editar_estado"
+           app:layout_constraintTop_toTopOf="@+id/editar_cep" />
+
+       <EditText
+           android:id="@+id/input_editar_estado"
+           android:layout_width="140dp"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_estado"
+           android:inputType="text"
+           android:maxLength="2"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editEstado" />
+
+       <TextView
+           android:id="@+id/edit_cidade"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/poppins"
+           android:text="@string/cidade"
+           android:textColor="@color/colorTextStandard"
+           android:textSize="18sp"
+           app:layout_constraintTop_toBottomOf="@+id/input_editar_cep" />
+
+       <EditText
+           android:id="@+id/input_editar_cidade"
+           android:layout_width="0dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_cidade"
+           android:inputType="text"
+           android:maxLength="30"
+           app:layout_constraintTop_toBottomOf="@+id/edit_cidade" />
+
+
+       <TextView
+           android:id="@+id/edit_endereco"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/poppins"
+           android:text="@string/endereco"
+           android:textSize="18sp"
+           android:textColor="@color/colorTextStandard"
+           app:layout_constraintTop_toBottomOf="@+id/input_editar_cidade" />
+
+       <EditText
+           android:id="@+id/input_editar_endereco"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:hint="@string/hint_endereco"
+           android:inputType="text"
+           android:maxLength="30"
+           android:textColor="@color/colorTextStandard"
+           app:layout_constraintTop_toBottomOf="@+id/edit_endereco" />
+
+       <TextView
+           android:id="@+id/edit_bairro"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/poppins"
+           android:text="@string/bairro"
+           android:textSize="14dp"
+           android:textColor="@color/colorTextStandard"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/input_editar_endereco" />
+
+       <EditText
+           android:id="@+id/input_editar_bairro"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_bairro"
+           android:inputType="text"
+           android:maxLength="30"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/edit_bairro" />
+
+       <TextView
+           android:id="@+id/edit_numero"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/numero"
+           android:textColor="@color/colorTextStandard"
+           app:layout_constraintStart_toStartOf="@+id/input_editar_numero"
+           app:layout_constraintTop_toTopOf="@+id/edit_bairro" />
+
+       <EditText
+           android:id="@+id/input_editar_numero"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:hint="@string/hint_numero"
+           android:inputType="number"
+           android:maxLength="6"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/edit_numero" />
+
+       <ImageView
+           android:id="@+id/iamgem_tela_editar_perfil_endereco"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginEnd="10dp"
+           android:src="@drawable/icone_bolinha_com_borda"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/input_editar_bairro" />
+
+       <ImageView
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:layout_marginStart="10dp"
+           android:src="@drawable/icone_bolinha_preenchida"
+           app:layout_constraintStart_toEndOf="@+id/iamgem_tela_editar_perfil_endereco"
+           app:layout_constraintTop_toTopOf="@id/iamgem_tela_editar_perfil_endereco" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

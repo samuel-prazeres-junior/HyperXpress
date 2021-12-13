@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".view.activity.CadastroConfirmaEmailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/quase_la"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/quase_la"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/mensagem_quase_la"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/quase_la"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/msg_confimar_codigo"
+        android:textColor="@color/colorTextStandard"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codigo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem_quase_la"
+        android:text="@string/codigo_cadastro"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorTextStandard"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/input_codigo"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/codigo"
+        android:hint="@string/hint_input_codigo"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/reenviar_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_codigo"
+        android:onClick="reenviarEmail"
+        android:text="@string/reenviar_codigo_confirmacao"
+        android:textColor="@color/roxo"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_quase_la"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/reenviar_codigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="confirmaCodigo"
+        android:text="@string/confirmar"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_gif_tela_cadastro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/btn_quase_la"
+        app:layout_constraintStart_toStartOf="@id/btn_quase_la"
+        app:layout_constraintTop_toBottomOf="@id/btn_quase_la" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/imagem_tela_qsla_um"
+        app:layout_constraintTop_toTopOf="@+id/imagem_tela_qsla_um"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icone_bolinha_com_borda"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imagem_tela_qsla_um"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gif_tela_cadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icone_bolinha_com_borda"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+       app:layout_constraintStart_toEndOf="@+id/imagem_tela_qsla_um"
+        app:layout_constraintTop_toTopOf="@+id/imagem_tela_qsla_um"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icone_bolinha_preenchida"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

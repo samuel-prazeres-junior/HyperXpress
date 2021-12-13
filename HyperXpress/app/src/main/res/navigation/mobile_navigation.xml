@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hyperxpress.view.fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_produtoEspecificoFragment"
+            app:destination="@id/produtoEspecificoFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_buscaProdutoFragment"
+            app:destination="@id/buscaProdutoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_adicioar_produto"
+        android:name="com.example.hyperxpress.view.fragment.AdicionarProdutoFragment"
+        android:label="Adicionar Produto"
+        tools:layout="@layout/fragment_adicionar_produto" >
+        <action
+            android:id="@+id/action_nav_adicioar_produto_to_nav_adicionar_fotos_produto"
+            app:destination="@id/nav_adicionar_fotos_produto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_editar_cadastro_pessoal"
+        android:name="com.example.hyperxpress.view.fragment.EditarInfoCadastroPessoalFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/fragment_editar_info_cadastro_pessoal" >
+        <action
+            android:id="@+id/action_nav_editar_cadastro_pessoal_to_editarInfoCadastroEnderecoFragment"
+            app:destination="@id/editarInfoCadastroEnderecoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_adicionar_fotos_produto"
+        android:name="com.example.hyperxpress.view.fragment.AdicionarProdutoComFotosFragment"
+        android:label="Adicionar Produto"
+        tools:layout="@layout/fragment_adicionar_produto_com_fotos" >
+        <argument
+            android:name="nome"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="marca"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="preco"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="tamanho"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="categoria"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="genero"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <action
+            android:id="@+id/action_nav_adicionar_fotos_produto_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarInfoCadastroEnderecoFragment"
+        android:name="com.example.hyperxpress.view.fragment.EditarInfoCadastroEnderecoFragment"
+        android:label="Editar Endereço"
+        tools:layout="@layout/fragment_editar_info_cadastro_endereco" >
+        <argument
+            android:name="cep"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="estado"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="cidade"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="endereco"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="bairro"
+            app:argType="string"
+            android:defaultValue="'  '" />
+        <argument
+            android:name="numero"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="nome"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="avatar"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="senha"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="idUsuario"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="cpf"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="dataNasc"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="complemento"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <action
+            android:id="@+id/action_editarInfoCadastroEnderecoFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.hyperxpress.view.activity.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.hyperxpress.view.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/cadastroConfirmaEmailActivity"
+        android:name="com.example.hyperxpress.view.activity.CadastroConfirmaEmailActivity"
+        android:label="activity_cadastro_confirma_email"
+        tools:layout="@layout/activity_cadastro_confirma_email" />
+    <activity
+        android:id="@+id/cadastroEnderecoActivity"
+        android:name="com.example.hyperxpress.view.activity.CadastroEnderecoActivity"
+        android:label="activity_cadastro_endereco"
+        tools:layout="@layout/activity_cadastro_endereco" />
+    <activity
+        android:id="@+id/cadastroFinalizadoActivity"
+        android:name="com.example.hyperxpress.view.activity.CadastroFinalizadoActivity"
+        android:label="activity_cadastro_finalizado"
+        tools:layout="@layout/activity_cadastro_finalizado" />
+    <activity
+        android:id="@+id/cadastroPessoalActivity"
+        android:name="com.example.hyperxpress.view.activity.CadastroPessoalActivity"
+        android:label="activity_cadastro_pessoal"
+        tools:layout="@layout/activity_cadastro_pessoal" />
+    <fragment
+        android:id="@+id/produtoEspecificoFragment"
+        android:name="com.example.hyperxpress.view.fragment.ProdutoEspecificoFragment"
+        android:label="Detalhes Produto"
+        tools:layout="@layout/fragment_produto_especifico" >
+        <argument
+            android:name="idProduto"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="nomeProduto"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="idVendedor"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="nomeVendedor"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="precoProduto"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="trocavel"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="nivelDestaqueVendedor"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="marca"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="tamanho"
+            app:argType="string"
+            android:defaultValue="' '" />
+        <argument
+            android:name="descricaoProduto"
+            app:argType="string"
+            android:defaultValue="' '" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_carrinho"
+        android:name="com.example.hyperxpress.view.fragment.CarrinhoFragment"
+        android:label="Carrinho"
+        tools:layout="@layout/fragment_carrinho" />
+    <fragment
+        android:id="@+id/nav_historico_vendedor"
+        android:name="com.example.hyperxpress.view.fragment.HistoricoVendedorFragment"
+        android:label="Historico Anuncios"
+        tools:layout="@layout/fragment_historico_vendedor" >
+        <action
+            android:id="@+id/action_nav_historico_vendedor_to_nav_adicioar_produto"
+            app:destination="@id/nav_adicioar_produto" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_favoritos"
+        android:name="com.example.hyperxpress.view.fragment.FavoritosFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/nav_suporte"
+        android:name="com.example.hyperxpress.view.fragment.SuporteFragment"
+        android:label="Suporte"
+        tools:layout="@layout/fragment_suporte" />
+    <fragment
+        android:id="@+id/buscaProdutoFragment"
+        android:name="com.example.hyperxpress.view.fragment.BuscaProdutoFragment"
+        android:label="Busca"
+        tools:layout="@layout/fragment_busca_produto" >
+        <action
+            android:id="@+id/action_buscaProdutoFragment_to_produtoEspecificoFragment"
+            app:destination="@id/produtoEspecificoFragment" />
+    </fragment>
+
+
+</navigation>

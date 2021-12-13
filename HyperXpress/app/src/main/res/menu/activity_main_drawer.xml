@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icone_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_editar_cadastro_pessoal"
+            android:icon="@drawable/icone_usuario"
+            android:title="@string/perfil" />
+        <item
+            android:id="@+id/nav_favoritos"
+            android:icon="@drawable/icone_favorito"
+            android:title="@string/favoritos" />
+        <item
+            android:id="@+id/nav_carrinho"
+            android:icon="@drawable/icone_carrinho"
+            android:title="@string/carrinho" />
+        <item
+            android:id="@+id/nav_adicioar_produto"
+            android:icon="@drawable/icone_camera"
+            android:title="@string/anunciar" />
+
+        <item
+            android:id="@+id/nav_historico_vendedor"
+            android:icon="@drawable/icone_historico"
+            android:title="@string/historico_vendedor" />
+        <item
+            android:id="@+id/nav_suporte"
+            android:icon="@drawable/icone_suporte"
+            android:title="@string/suporte" />
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@drawable/icone_sobre"
+            android:title="@string/sobre" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/icone_sair"
+            android:onClick="desconectar"
+            android:title="@string/sair" />
+    </group>
+</menu>

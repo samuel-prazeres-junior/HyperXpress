@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.EditarInfoCadastroPessoalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:id="@+id/icone_user_tela_editar_info_pessoais"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icone_usuario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/icone_editar"
+            app:layout_constraintStart_toEndOf="@+id/icone_user_tela_editar_info_pessoais"
+            app:layout_constraintTop_toTopOf="@+id/icone_user_tela_editar_info_pessoais" />
+
+        <TextView
+            android:id="@+id/salvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/poppins"
+            android:onClick="salvarAlteracoesEdicaoEndereco"
+            android:text="@string/salvar"
+            android:textColor="@color/roxo"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/icone_user_tela_editar_info_pessoais" />
+
+
+        <ImageView
+            android:id="@+id/qr_code"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/icone_qrcode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/salvar" />
+
+        <TextView
+            android:id="@+id/editar_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/nome"
+            android:textSize="14dp"
+            android:textColor="@color/colorTextStandard"
+            app:layout_constraintTop_toBottomOf="@+id/icone_user_tela_editar_info_pessoais" />
+
+        <EditText
+            android:id="@+id/input_editar_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/hint_nome"
+            android:inputType="text"
+            android:maxLength="50"
+            app:layout_constraintTop_toBottomOf="@+id/editar_nome" />
+
+
+        <TextView
+            android:id="@+id/editar_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/avatar"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextStandard"
+            app:layout_constraintTop_toBottomOf="@+id/input_editar_nome" />
+
+        <EditText
+            android:id="@+id/input_editar_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/hint_avatar"
+            android:inputType="text"
+            android:maxLength="50"
+            app:layout_constraintTop_toBottomOf="@+id/editar_avatar" />
+
+
+        <TextView
+            android:id="@+id/editar_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/email"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextStandard"
+            app:layout_constraintTop_toBottomOf="@+id/input_editar_avatar" />
+
+        <EditText
+            android:id="@+id/input_editar_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_email"
+            android:inputType="text"
+            android:maxLength="50"
+            app:layout_constraintTop_toBottomOf="@+id/editar_email" />
+
+        <TextView
+            android:id="@+id/edit_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/senha"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextStandard"
+            app:layout_constraintTop_toBottomOf="@+id/input_editar_email" />
+
+        <EditText
+            android:id="@+id/input_editar_senha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+        <Button
+            android:id="@+id/btn_tela_editar_endereco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/input_editar_senha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="@string/proximo"/>
+
+        <ImageView
+            android:id="@+id/outro_icone_comum"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icone_bolinha_preenchida"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tela_editar_endereco" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icone_bolinha_com_borda"
+            app:layout_constraintStart_toEndOf="@+id/outro_icone_comum"
+            app:layout_constraintTop_toTopOf="@+id/outro_icone_comum" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

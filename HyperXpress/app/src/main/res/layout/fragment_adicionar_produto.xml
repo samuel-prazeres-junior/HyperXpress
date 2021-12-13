@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AdicionarProdutoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+        <TextView
+            android:id="@+id/tv_nome_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_do_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_adicionar_nome_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/camiseta_thasher"
+            android:maxLength="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nome_produto" />
+
+        <TextView
+            android:id="@+id/tv_marca_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marca_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_adicionar_nome_produto" />
+
+        <EditText
+            android:id="@+id/edit_adicionar_marca_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/marca_thasher"
+            android:maxLength="30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_marca_produto" />
+
+
+        <TextView
+            android:id="@+id/tv_preco_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preco_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_adicionar_marca_produto" />
+
+        <EditText
+            android:id="@+id/edit_adicionar_preco_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_preco_produto"
+            android:maxLength="20"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_preco_produto" />
+
+        <TextView
+            android:id="@+id/tv_tamanho_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tamanho_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_adicionar_preco_produto" />
+
+        <Spinner
+            android:id="@+id/spinner_tamanho_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/colorTextStandard"
+            android:entries="@array/lista_tamanho_produto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tamanho_produto" />
+
+
+        <TextView
+            android:id="@+id/tv_categoria_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_tamanho_produto" />
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/colorTextStandard"
+            android:entries="@array/lista_categoria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_categoria_produto" />
+
+        <TextView
+            android:id="@+id/tv_genero_produto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/genero_produto"
+            android:textColor="@color/colorTextStandard"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_categoria" />
+
+        <Spinner
+            android:id="@+id/spinner_genero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:entries="@array/lista_genero"
+            android:textColor="@color/colorTextStandard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_genero_produto" />
+
+        <Button
+            android:id="@+id/btn_tela_adicionar_fotos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            android:text="@string/proximo"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_genero"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

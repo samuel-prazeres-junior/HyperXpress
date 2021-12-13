@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.SuporteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_assunto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selecione um assunto"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_nome_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_assunto"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edt_nome_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nome"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome_suporte"/>
+
+
+    <TextView
+        android:id="@+id/tv_email_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_nome_suporte"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edt_email_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_suporte"/>
+
+
+    <TextView
+        android:id="@+id/tv_mensage_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mensagem"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_email_suporte"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edt_mensagem_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/descricao_produto"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mensage_suporte"/>
+
+
+    <Button
+        android:id="@+id/btn_enviar_suporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_roxo_sem_layout"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

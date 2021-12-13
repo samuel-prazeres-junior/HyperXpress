@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTextStandard">#FFFFFF</color>
+    <color name="fundo_home">#363C42</color>
+    <color name="roxo">#8D44FF</color>
+    <color name="anuncio_color">#343A40</color>
+    <color name="fundo_escuro">#343A40</color>
+    <color name="fundo_meio_escuro">#FFFFFF</color>
+    <color name="white_light">#343A40</color>
+</resources>

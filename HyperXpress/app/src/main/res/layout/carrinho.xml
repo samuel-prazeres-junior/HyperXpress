@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_image_produto_carrinho"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/icone_patinete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nome_produto_carrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/colorTextStandard"
+        android:text="@string/camiseta_thasher"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/iv_image_produto_carrinho"
+        app:layout_constraintTop_toTopOf="@id/iv_image_produto_carrinho"/>
+
+    <TextView
+        android:id="@+id/tv_preco_produto_carrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preco_primeiro_produto"
+        android:textColor="@color/colorTextStandard"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_nome_produto_carrinho"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome_produto_carrinho" />
+
+    <ImageView
+        android:id="@+id/estrela_um"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icone_estrela"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/tv_preco_produto_carrinho"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco_produto_carrinho"/>
+
+    <ImageView
+        android:id="@+id/estrela_dois"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:src="@drawable/icone_estrela"
+        app:layout_constraintStart_toEndOf="@id/estrela_um"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco_produto_carrinho"/>
+
+    <ImageView
+        android:id="@+id/estrela_trez"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:src="@drawable/icone_estrela"
+        app:layout_constraintStart_toEndOf="@id/estrela_dois"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco_produto_carrinho"/>
+
+    <ImageView
+        android:id="@+id/estrela_quatro"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:src="@drawable/icone_estrela"
+        app:layout_constraintStart_toEndOf="@id/estrela_trez"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco_produto_carrinho"/>
+
+    <ImageView
+        android:id="@+id/estrela_cinco"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:src="@drawable/icone_estrela"
+        app:layout_constraintStart_toEndOf="@id/estrela_quatro"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco_produto_carrinho"/>
+
+
+    <TextView
+        android:id="@+id/tv_nome_vendedor_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parcelas_produto"
+        android:textColor="@color/colorTextStandard"
+        android:fontFamily="@font/poppins"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/estrela_um"
+        app:layout_constraintTop_toBottomOf="@+id/estrela_um" />
+
+    <TextView
+        android:id="@+id/tv_descricao_produto_vendedor"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="@string/parcelas_produto"
+        android:textColor="@color/colorTextStandard"
+        android:fontFamily="@font/poppins"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_nome_vendedor_produto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome_vendedor_produto" />
+
+    <CheckBox
+        android:id="@+id/cb_produto_checado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_nome_produto_carrinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_nome_vendedor_produto"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_descricao_produto_vendedor"
+        android:background="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

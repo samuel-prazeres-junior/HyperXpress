@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HyperXpress</string>
+    <string name="email">Email</string>
+    <string name="senha">Password</string>
+    <string name="entrar">Enter</string>
+    <string name="pessoal">Personal</string>
+    <string name="nome">Name</string>
+    <string name="avatar">Avatar</string>
+    <string name="cpf">CPF</string>
+    <string name="confirmar_senha">Confirm password</string>
+    <string name="cep">Cep</string>
+    <string name="cidade">City</string>
+    <string name="bairro">District</string>
+    <string name="numero">Number</string>
+    <string name="title_activity_editar_info_usuario">Edit User information</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="perfil">Perfil</string>
+    <string name="title_activity_aplicacao_apos_logar">Application after login</string>
+    <string name="editar_cadastro">Edit registration</string>
+    <string name="confirmar">Confirm</string>
+    <string name="nome_do_produto">Product\'s name</string>
+    <string name="camiseta_thasher">Thasher shirt</string>
+    <string name="marca_produto">Brand</string>
+    <string name="marca_thasher">Thasher</string>
+    <string name="tamanho_produto">Size</string>
+    <string name="medida_roupa">G</string>
+    <string name="categoria_produto">Category</string>
+    <string name="genero_produto">Generous</string>
+    <string name="preco_produto">Price</string>
+    <string name="hint_preco_produto">$: 79.99</string>
+    <string name="modelo_produto">Model</string>
+    <string name="hint_modelo_produto">Basic</string>
+    <string name="quase_la">Amost there</string>
+    <string name="msg_confimar_codigo">To complete your registration, simply enter the verification code that was sent to your cell phone .</string>
+    <string name="codigo_cadastro">Code</string>
+    <string name="hint_input_codigo">Enter your code</string>
+    <string name="reenviar_codigo_confirmacao">Resend código</string>
+    <string name="endereco">Address</string>
+    <string name="hint_cep">08410400</string>
+    <string name="estado">State</string>
+    <string name="hint_estado">UF</string>
+    <string name="hint_cidade">São Paulo</string>
+    <string name="hint_endereco">Av Paulista</string>
+    <string name="hint_bairro">Maua</string>
+    <string name="hint_numero">Ex: 412</string>
+    <string name="voltar">Back</string>
+    <string name="proximo">Next</string>
+    <string name="sucesso">Sucess</string>
+    <string name="msg_cadastro_concluido">Congratulations, you are now a member of HyperXpress.</string>
+    <string name="hint_nome">Your full name</string>
+    <string name="hint_avatar">Your avatar name</string>
+    <string name="hint_cpf">Only numbers</string>
+    <string name="hint_email">exemple@exemple.com</string>
+    <string name="data_nascimento">Birth date</string>
+    <string name="hint_data_nascimento">DD/MM/AAAA</string>
+    <string name="hint_senha">Your access password</string>
+    <string name="hint_confirm_senha">Confirm</string>
+    <string name="sub_titulo">Your Clothes in the best way</string>
+    <string name="texto_splash">HX</string>
+    <string name="salvar">Save</string>
+    <string name="nome_primeiro_produto">Black Scooter</string>
+    <string name="preco_primeiro_produto">$: 89,99</string>
+    <string name="nome_segundo_produto">Printer</string>
+    <string name="preco_segundo_produto">$: 199,99</string>
+    <string name="esqueci_minha_senha">I forgot my password</string>
+    <string name="nao_tenho_cadastro">I don\'t have registration</string>
+    <string name="tecido">Tissue</string>
+    <string name="hint_tecido">Cotton</string>
+    <string name="descricao">Description</string>
+    <string name="trocavel">Exchangeable</string>
+    <string name="anunciar_produto">Advertise Product</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favoritos">Favorites</string>
+    <string name="carrinho">Cart</string>
+    <string name="anunciar">Advertise</string>
+    <string name="suporte">Support</string>
+    <string name="sobre">About</string>
+    <string name="sair">Exit</string>
+    <string name="erro_inesperado">An unexpected error has occurred. Try again later</string>
+    <string name="sem_internet">An error occurred, check your Internet</string>
+    <string name="login_falhou">Username or password is invalid</string>
+    <string name="endereco_nao_encontrado">Address Not Found</string>
+    <string name="caracteres_permitodos_nome">ABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="caracteres_permitidos_avatar">aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ_.1234567890</string>
+    <string name="cache_nome">nome</string>
+    <string name="cache_cpf">cpf</string>
+    <string name="cache_data_nasc">dataNasc</string>
+    <string name="chache_estado">estadoUf</string>
+    <string name="cache_cep">cep</string>
+    <string name="cache_bairro">bairro</string>
+    <string name="cache_logradouro">logradouro</string>
+    <string name="cache_numero">numero</string>
+    <string name="cache_cidade">cidade</string>
+    <string name="cache_complemento">complemento</string>
+    <string name="cache_avatar">avatar</string>
+    <string name="cache_profile">profileurl</string>
+    <string name="cache_email">email</string>
+    <string name="cache_senha">senha</string>
+    <string name="cache_id">id</string>
+    <string name="cache_username">username</string>
+    <string name="usuario">User</string>
+    <string name="celular">Phone</string>
+    <string name="produto">Product</string>
+    <string name="hint_telefone">(11)90283-9015</string>
+    <string name="caracteristicas_produto">Main Features</string>
+    <string name="blusas">Blouses</string>
+    <string name="camisas">Shirts</string>
+    <string name="bermudas">Shorts</string>
+    <string name="calcas">Trousers</string>
+    <string name="calcados">Shoes</string>
+    <string name="parcelas_produto">4 x de R$: 22,50 without interest</string>
+    <string name="descricao_produto">Little used, original Thrasher shirt didn\'t fit me right so I\'m selling it</string>
+    <string name="comprar">Purchase</string>
+    <string name="produtos">Products</string>
+    <string name="pedidos">Requests</string>
+    <string name="finalizados">Finalized</string>
+    <string name="sinal_mais">+</string>
+    <string name="historico_vendedor">Seller History</string>
+    <string name="produto_favoritado">Product has been bookmarked successfully.</string>
+    <string name="produto_adicionado_carrinho">Product has been successfully added to cart.</string>
+    <string name="item_removido">Item has been removed from Cart successfully.</string>
+    <string name="minimo_caracteres_adicionar_produto">Field Must have at least 3 characters</string>
+    <string name="minimo_caracteres_adicionar_produto_com_foto">Field Must have at least 45 characters</string>
+    <string name="editar_cadastro_sucesso">User edited successfully.</string>
+    <string name="chat">Chat Xpress</string>
+    <string name="contatos">Contacts</string>
+    <string name="titulo_notificacao">Verification Code</string>
+    <string name="descricao_notificacao">HyperXpress Code</string>
+    <string name="codigo_incorreto">Incorrect code</string>
+    <string name="digite_codigo">Type the code</string>
+    <string name="redefinir_senha">A password reset request has been sent to your email</string>
+    <string name="cep_nao_encontrado">zip code not found</string>
+    <string name="nome_invalido">Name must contain at least 3 characters</string>
+    <string name="avatar_invalido">Avatar must have at least 5 characters</string>
+    <string name="cpf_invalido">ITIN Must be 11 digits long</string>
+    <string name="email_invalido">Invalid email</string>
+    <string name="data_nasc_invalido">Invalid date</string>
+    <string name="senha_invalido">Password must have at least 8 characters</string>
+    <string name="data_confirmacao_senha_invalido">Password and password confirmation must be the same</string>
+    <string name="estado_invalido">Invalid state</string>
+    <string name="cidade_invalido">Invalid city</string>
+    <string name="bairro_invalido">Invalid district</string>
+    <string name="numero_invalido">Número Invalido</string>
+    <string name="cache_estado_uf">Uf state</string>
+    <string name="cache_endereco">Address</string>
+    <string name="imagens_invalida">Product must have 4 Photos</string>
+    <string name="enviar">Submit</string>
+
+    <string-array name="lista_categoria">
+        <item>Trousers</item>
+        <item>Shirts</item>
+        <item>Shorts</item>
+        <item>Footwear</item>
+    </string-array>
+    <string-array name="lista_genero">
+        <item>Masculine</item>
+        <item>Feminine</item>
+        <item>Child</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="lista_trocavel">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

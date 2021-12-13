@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "451104588356",
+    "project_id": "fir-hyperxpress",
+    "storage_bucket": "fir-hyperxpress.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451104588356:android:6d69ee756737011b613211",
+        "android_client_info": {
+          "package_name": "com.example.hyperxpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451104588356-2lch41fbp4pg7veh0fb15kerjs9uht9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCC_9uNIQRLozxSFlPmnF7YeClRTTmIYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451104588356-2lch41fbp4pg7veh0fb15kerjs9uht9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
