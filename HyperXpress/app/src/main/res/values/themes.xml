@@ -27,4 +27,5 @@
     <style name="Theme.HyperXpress.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.HyperXpress.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

@@ -96,7 +96,7 @@ class CadastroConfirmaEmailActivity : AppCompatActivity() {
                 val cpf = dados?.getString(getString(R.string.cache_cpf))
                 val dataNasc = dados?.getString(getString(R.string.cache_data_nasc))
                 val emailConfirmado = true
-                val estadoUf = dados?.getString(getString(R.string.chache_estado))
+                val estadoUf = dados?.getString(getString(R.string.cache_estado_uf))
                 val cep = dados?.getString(getString(R.string.cache_cep))
                 val bairro = dados?.getString(getString(R.string.cache_bairro))
                 val logradouro = dados?.getString(getString(R.string.cache_logradouro))
